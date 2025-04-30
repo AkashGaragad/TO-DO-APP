@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+.main-1,
+.main-2 {
+  width: 100%;
+  text-align: center;
+}
+
+.main-2 {
+  display: none;
+}
+
+#main_heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#start_btn {
+  appearance: none;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+#start_btn:hover {
+  background-color: rgb(45, 152, 45);
+}
+
+.h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.main-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#input_box {
+  height: 2.7rem;
+  padding: 0 1rem;
+  border: 1px solid black;
+  flex: 1 1 60%;
+  min-width: 200px;
+}
+
+#input_box::placeholder {
+  color: black;
+  font-weight: 700;
+}
+
+#add {
+  appearance: none;
+  border: none;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 4rem;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+}
+
+#list li {
+  margin: 0.5rem 0;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+ul li::before {
+  content: "✔";
+  color: green;
+  margin-right: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(89, 161, 96);
+}
+
+.completed::before {
+  content: "❌";
+  color: red;
+}
+
+.removeBtn {
+  margin-left: 1rem;
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+
